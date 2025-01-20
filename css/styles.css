@@ -19,7 +19,7 @@
     --font-size-small: 0.875rem;
     --font-size-normal: 1rem;
     --font-size-large: 1.5rem;
-    --font-size-heading: 2rem;
+    --font-size-heading: 2.5rem;
 
     /* Spacing */
     --spacing-small: 0.5rem;
@@ -99,9 +99,32 @@ footer a:hover {
     padding: 20px;
 }
 
+/* Jumbotron Heading */
 .jumbotron h1 {
-    font-size: 3rem;
-    margin: 0;
+    font-family: var(--font-family-accent);
+    font-size: 4rem;
+    color: var(--color-neutral);
+    margin-bottom: var(--spacing-medium);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-bottom: var(--spacing-medium);
+    letter-spacing: 2px;
+}
+
+.jumbotron h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(
+        90deg,
+        var(--color-accent) 0%,
+        var(--color-secondary) 100%
+    );
+    border-radius: 2px;
 }
 
 .jumbotron p {
@@ -128,27 +151,66 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: var(--spacing-medium);
-}
-
-nav ul li:hover {
-    margin: 0;
-    padding: 0;
-    box-shadow: var(--box-shadow);
+    gap: var(--spacing-large);
 }
 
 nav a {
-    color: var(--color-dark);
-    text-decoration: none;
-    font-size: var(--font-size-normal);
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
 }
 
 nav a:hover {
-    color: var(--color-accent);
+    text-decoration: underline; 
+    text-decoration-color: var(--color-accent); 
+    text-underline-offset: 3px; 
 }
 
 main {
     padding: var(--spacing-large);
+}
+
+
+h2 {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    position: relative;
+    padding-bottom: var(--spacing-medium);
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+#OverMe h2 {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    position: relative;
+    padding-bottom: var(--spacing-medium);
+}
+
+#OverMe h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-accent);
 }
 
 /* Cards */
@@ -162,6 +224,12 @@ main {
     margin: var(--spacing-medium) 0;
     display: block;
     text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(139, 69, 19, 0.2);
 }
 
 .card h2 {
@@ -171,7 +239,7 @@ main {
 }
 
 .card img {
-    width: 15%;
+    width: 25%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
@@ -185,13 +253,305 @@ main {
 
 
 /* Portfolio */
-
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--spacing-medium);
+.portfolio h2 {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    position: relative;
+    padding-bottom: var(--spacing-medium);
 }
 
+.portfolio h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-large);
+    align-items: start;
+}
+
+/* Price List */
+/* Pricing Container */
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-large);
+    padding: var(--spacing-large);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services-container h2 {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    position: relative;
+    padding-bottom: var(--spacing-medium);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-large);
+    align-items: start;
+}
+
+#OverMe h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+/* Service Card */
+.service-card {
+    background-color: var(--color-neutral);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-large);
+    text-align: center;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(139, 69, 19, 0.2);
+}
+
+/* Service Icon */
+.service-icon img {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--color-secondary);
+}
+
+/* Service Header */
+.service-header {
+    margin-bottom: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.service-title {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
+}
+
+.service-price {
+    font-size: 1.75rem;
+    color: var(--color-dark);
+    font-weight: bold;
+}
+
+.price-range {
+    color: var(--color-primary);
+    font-size: var(--font-size-small);
+    display: block;
+    margin-top: 5px;
+}
+
+/* Service Details */
+.service-details {
+    list-style: none;
+    padding: 0;
+    margin: var(--spacing-medium) 0;
+}
+
+.service-details li {
+    padding: var(--spacing-small) 0;
+    color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.service-details li::before {
+    content: "✓";
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+/* Service Button */
+.service-button {
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+    padding: var(--spacing-small) var(--spacing-large);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-normal);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: var(--spacing-medium);
+}
+
+.service-button:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}
+
+/* Urgent Badge */
+.urgente-badge {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #FF4136;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: var(--font-size-small);
+    font-weight: bold;
+}
+
+/* Estimated time */
+.tiempo-estimado {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+    padding: var(--spacing-small);
+    border-radius: var(--border-radius);
+    margin: var(--spacing-medium) 0;
+    font-size: var(--font-size-small);
+}
+
+/* Contact Section */
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-large);
+}
+
+.contact-section h2 {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+    position: relative;
+    padding-bottom: var(--spacing-medium);
+}
+
+.contact-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 3px;
+    background-color: var(--color-accent);
+}
+
+/* Grid for contact info and map */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-large);
+    align-items: start;
+}
+
+/* contact info */
+.contact-info {
+    background-color: var(--color-neutral);
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-large);
+    box-shadow: var(--box-shadow);
+    height: 84%;
+}
+
+.info-block {
+    margin-bottom: var(--spacing-large);
+}
+
+.info-block h3 {
+    font-family: var(--font-family-accent);
+    color: var(--color-primary);
+    font-size: var(--font-size-large);
+    margin-bottom: var(--spacing-small);
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    margin-bottom: var(--spacing-small);
+}
+
+.contact-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-primary);
+}
+
+/* Schedule */
+.schedule-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: var(--spacing-small);
+}
+
+.day {
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+/* Map */
+.map-container {
+    border: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 100%;
+    min-height: 400px;
+    box-shadow: var(--box-shadow);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Direction button */
+.direction-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-small);
+    background-color: var(--color-primary);
+    color: var(--color-neutral);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    margin-top: var(--spacing-medium);
+    transition: all 0.3s ease;
+}
+
+.direction-button:hover {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}
 
 
 /* Responsiveness */
@@ -218,5 +578,22 @@ main {
 
     .jumbotron p {
         font-size: 1rem;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+        padding: var(--spacing-medium);
+    }
+    
+    .service-card {
+        margin-bottom: var(--spacing-medium);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-container {
+        min-height: 300px;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="/js/scripts.js"></script>
 </head>
+
 <body>
     <header>
         <section class="jumbotron">
@@ -14,20 +16,20 @@
                 <h1>Zapatero</h1>
                 <p>Reparación de todo tipo de calzado</p>
             </section>
-        </section>       
+        </section>
         <nav>
             <ul>
                 <li>
-                    <a href="">Sobre mi</a>
+                    <a href="#OverMe">Sobre mi</a>
                 </li>
                 <li>
-                    <a href="">Trabajos que realizo</a>
+                    <a href="#Portfolio">Trabajos que realizo</a>
                 </li>
                 <li>
-                    <a href="">Listado de precios</a>
+                    <a href="#PriceList">Listado de precios</a>
                 </li>
                 <li>
-                    <a href="">Contacto y localización</a>
+                    <a href="#ContactLocation">Contacto y localización</a>
                 </li>
             </ul>
         </nav>
@@ -37,51 +39,188 @@
             <img src="/img/overmefoto.png" alt="El zapatero">
             <h2>Sobre mi</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
-                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
+                Nullam nec purus nec nunc ultricies ultricies. Nullam nec purus nec nunc ultricies ultricies.
             </p>
         </section>
-        <section id="Portfolio" class="portfolio">
+        <section id="Portfolio">
             <h2>Trabajos que realizo</h2>
-            <section id="card1" class="card">
-                <img src="/img/portfolio1.png" alt="trabajo1">
-                <h3>Lorem ipsum</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptates quas corporis mollitia sed ducimus, expedita laboriosam earum vel qui quia voluptate quos ullam error, blanditiis voluptatem ipsa illum suscipit.                </p>
-            </section>
-            <section id="card2" class="card">
-                <img src="/img/portfolio2.png" alt="Trabajo2">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa sit tempora quos iste voluptatem repellendus, iusto ipsum, ad earum maiores numquam magnam delectus nesciunt eos aliquam! At, culpa aspernatur.</p>
-            </section>
-            <section id="card3" class="card">
-                <img src="/img/portfolio3.png" alt="">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint similique eius numquam. Harum, distinctio nulla unde odio sed voluptates laborum. Ad accusantium veritatis ut error voluptates! Voluptate debitis aperiam perspiciatis?</p>
-            </section>
-            <section id="card4" class="card">
-                <img src="/img/portfolio4.png" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis in nihil facere accusamus deserunt molestias? Repellendus quasi eveniet, enim, obcaecati, rerum vero laudantium ipsa possimus quibusdam placeat optio dicta suscipit!</p>
-            </section> 
+            <div class="portfolio-grid">
+                <div id="card1" class="card">
+                    <img src="/img/portfolio1.png" alt="trabajo1">
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto voluptates quas corporis mollitia
+                        sed
+                        ducimus, expedita laboriosam earum vel qui quia voluptate quos ullam error, blanditiis
+                        voluptatem
+                        ipsa illum suscipit. </p>
+                </div>
+                <div id="card2" class="card">
+                    <img src="/img/portfolio2.png" alt="Trabajo2">
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa sit tempora quos iste
+                        voluptatem repellendus, iusto ipsum, ad earum maiores numquam magnam delectus nesciunt eos
+                        aliquam!
+                        At, culpa aspernatur.</p>
+                </div>
+                <div id="card3" class="card">
+                    <img src="/img/portfolio3.png" alt="">
+                    <h3 class="service-title">Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint similique eius numquam. Harum,
+                        distinctio nulla unde odio sed voluptates laborum. Ad accusantium veritatis ut error voluptates!
+                        Voluptate debitis aperiam perspiciatis?</p>
+                </div>
+                <div id="card4" class="card">
+                    <img src="/img/portfolio4.png" alt="">
+                    <h3 class="service-title">Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis in nihil facere accusamus deserunt
+                        molestias? Repellendus quasi eveniet, enim, obcaecati, rerum vero laudantium ipsa possimus
+                        quibusdam
+                        placeat optio dicta suscipit!</p>
+                </div>
+            </div>
         </section>
-        <section id="PriceList"></section>
-        <section id="ContactLocation"></section>
+        <section id="PriceList">
+            <h2>Lista de Precios</h2>
+            <div id="listadoPrecios" class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="/img/portfolio1.png" alt="Icono de zapato">
+                    </div>
+                    <div class="service-header">
+                        <h3 class="service-title">Reparación Básica</h3>
+                        <div class="service-price">Desde $15</div>
+                        <span class="price-range">según el trabajo</span>
+                    </div>
+                    <div class="tiempo-estimado">
+                        Tiempo estimado: 24-48 horas
+                    </div>
+                    <ul class="service-details">
+                        <li>Cambio de tapas</li>
+                        <li>Pegado de suelas</li>
+                        <li>Costura simple</li>
+                        <li>Cambio de cordones</li>
+                    </ul>
+                    <button class="service-button">Solicitar Servicio</button>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="img/portfolio2.png" alt="Icono de reparación">
+                    </div>
+                    <div class="service-header">
+                        <h3 class="service-title">Reparación Completa</h3>
+                        <div class="service-price">Desde $35</div>
+                        <span class="price-range">según el material</span>
+                    </div>
+                    <div class="tiempo-estimado">
+                        Tiempo estimado: 2-3 días
+                    </div>
+                    <ul class="service-details">
+                        <li>Cambio de suelas completas</li>
+                        <li>Reparación de costuras</li>
+                        <li>Cambio de forros</li>
+                        <li>Tratamiento de cuero</li>
+                        <li>Teñido de piel</li>
+                    </ul>
+                    <button class="service-button">Solicitar Servicio</button>
+                </div>
+                <div class="service-card">
+                    <span class="urgente-badge">Servicio Urgente</span>
+                    <div class="service-icon">
+                        <img src="/img/portfolio3.png" alt="Icono premium">
+                    </div>
+                    <div class="service-header">
+                        <h3 class="service-title">Servicio Premium</h3>
+                        <div class="service-price">Desde $50</div>
+                        <span class="price-range">según complejidad</span>
+                    </div>
+                    <div class="tiempo-estimado">
+                        Tiempo estimado: 24 horas
+                    </div>
+                    <ul class="service-details">
+                        <li>Reparación urgente</li>
+                        <li>Restauración completa</li>
+                        <li>Materiales premium</li>
+                        <li>Recogida y entrega</li>
+                        <li>Garantía extendida</li>
+                    </ul>
+                    <button class="service-button">Solicitar Servicio</button>
+                </div>
+            </div>
+        </section>
+        <section id="ContactLocation">
+            <div id="Contact" class="contact-section">
+                <h2>Contacto y Localización</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="info-block">
+                            <h3>Información de Contacto</h3>
+                            <div class="contact-detail">
+                                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                </svg>
+                                <span>123 456 789</span>
+                            </div>
+                            <div class="contact-detail">
+                                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                                <span>contacto@zapatero.com</span>
+                            </div>
+                            <div class="contact-detail">
+                                <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <span>Avenida Hermanos Felgueroso 34, Gijón</span>
+                            </div>
+                        </div>
+
+                        <div class="info-block">
+                            <h3>Horario de Apertura</h3>
+                            <div class="schedule-grid">
+                                <span class="day">Lunes - Viernes:</span>
+                                <span>9:00 - 20:00</span>
+                                <span class="day">Sábado:</span>
+                                <span>10:00 - 14:00</span>
+                                <span class="day">Domingo:</span>
+                                <span>Cerrado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d539.8035048182844!2d-5.658683216201029!3d43.534870698747176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367d2f45c1148f%3A0xb2e1d9e8749b97!2sZapatero!5e0!3m2!1ses!2ses!4v1689711456217!5m2!1ses!2ses"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <p>
             <!--Change the url to my personal linkedin profile-->
-            Web desarrollada por: <a href="https://www.linkedin.com/in/sergio-fern%C3%A1ndez-ruiz-7b1b3b1b4/">Adrián Gómez Macías</a>           
+            Web desarrollada por: <a href="https://www.linkedin.com/in/sergio-fern%C3%A1ndez-ruiz-7b1b3b1b4/">Adrián
+                Gómez Macías</a>
         </p>
     </footer>
 </body>
+
 </html>
