@@ -322,6 +322,11 @@ h2::after {
 
 /* Service Card */
 .service-card {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 350px;
+    max-height: auto;
     background-color: var(--color-neutral);
     border: 2px solid var(--color-primary);
     border-radius: var(--border-radius);
@@ -405,7 +410,7 @@ h2::after {
     cursor: pointer;
     transition: all 0.3s ease;
     width: 100%;
-    margin-top: var(--spacing-medium);
+    margin-top: auto;
 }
 
 .service-button:hover {
